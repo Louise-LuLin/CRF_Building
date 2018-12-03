@@ -101,7 +101,7 @@ def assign_value(current_vector, point_name, name_part, label_part):
 
 with open(filepath, 'r') as fp:
     count = 0
-    for num_line in range(2551):
+    for num_line in range(2550):
 
         count = count + 1
         point_name = fp.readline()   # point name string
@@ -178,7 +178,7 @@ filtered_string = []
 with open(filepath, 'r') as fp:
     count = 0
     dataset = []
-    for num_line in range(2551):
+    for num_line in range(2550):
         point_name = fp.readline()
         label = fp.readline()
         point_name = point_name[:-2]  # get rid of the space and newline at the end
@@ -203,7 +203,7 @@ for i in filtered_string:
         min_len = len(i)
 print(min_len, max_len)
 
-# with open("sdh_dataset.bin", "wb") as sdh_dataset:
-#     pickle.dump(dataset, sdh_dataset)
-# with open("sdh_string.bin", "wb") as sdh_string:
-#     pickle.dump(filtered_string, sdh_string)
+with open("sdh_dataset.bin", "wb") as sdh_dataset:
+    pickle.dump(dataset, sdh_dataset)
+with open("sdh_string.bin", "wb") as sdh_string:
+    pickle.dump(filtered_string, sdh_string)

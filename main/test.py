@@ -11,6 +11,8 @@ import multiprocessing
 import pickle
 import math
 
+import sys
+sys.path.append("../..")
 import utils.utils as utils
 
 # Define feature dictionary.

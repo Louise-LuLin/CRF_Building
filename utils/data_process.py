@@ -5,7 +5,7 @@
 import numpy as np
 import pickle
 
-filepath = 'all_soda_labelledManually.txt'
+filepath = '../dataset/all_soda_labelledManually.txt'
 name_length = 14
 dict = ['o']    # Initial dictionary.
 
